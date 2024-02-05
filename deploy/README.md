@@ -15,7 +15,7 @@ flux create kustomization gitlab-runner-deployment \
     --source=GitRepository/gitlab-runner-deployment \
     --path="./deploy" \
     --prune=true \
-    --interval=60m \
+    --interval=5m \
     --wait=true \
-    --health-check-timeout=10m
+    --health-check-timeout=3m
 ```
