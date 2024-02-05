@@ -4,13 +4,6 @@ kind: Kustomization
 
 namespace: gitlab-runner
 
-nameReference:
-- kind: ConfigMap
-  version: v1
-  fieldSpecs:
-  - path: spec/valuesFrom/name/0
-    kind: HelmRelease
-
 configMapGenerator:
   - name: gitlab-runner-values
     files:
@@ -19,3 +12,6 @@ configMapGenerator:
 resources:
 - helm_repository.yaml
 - helm_release.yaml
+
+configurations:
+  - kustomizeconfig.yaml
