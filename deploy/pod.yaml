@@ -5,6 +5,7 @@ metadata:
   labels:
     run: pod
   name: pod
+  namespace: default
 spec:
   containers:
   - args:
