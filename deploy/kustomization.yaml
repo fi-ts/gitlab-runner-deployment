@@ -8,7 +8,7 @@ nameReference:
 - kind: ConfigMap
   version: v1
   fieldSpecs:
-  - path: spec/valuesFrom/name
+  - path: spec/valuesFrom/name/0
     kind: HelmRelease
 
 configMapGenerator:

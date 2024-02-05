@@ -7,7 +7,7 @@ kubectl create namespace gitlab-runner
 
 kubectl create secret generic gitlab-runner-api-token \
     --namespace gitlab-runner \
-    --from-literal="values.yaml=runner-token: <runner-token>"
+    --from-literal="values.yaml=runnerToken: <runner-token>"
 
 flux create source git gitlab-runner-deployment --url=https://github.com/fi-ts/gitlab-runner-deployment --branch=main
 
