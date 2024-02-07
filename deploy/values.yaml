@@ -201,7 +201,7 @@ rbac:
 ## ref: https://docs.gitlab.com/runner/monitoring/#configuration-of-the-metrics-http-server
 ##
 metrics:
-  enabled: false
+  enabled: true
 
   ## Define a name for the metrics port
   ##
@@ -350,11 +350,11 @@ runners:
   ##
   ## ref: https://docs.gitlab.com/ee/ci/runners/new_creation_workflow.html
   ##
-  # tags: ""
+  tags: "ms-k8s"
 
   ## Specify the name for the runner.
   ##
-  # name: ""
+  name: "metalstack.cloud"
 
   ## DEPRECATED: Specify the maximum timeout (in seconds) that will be set for job when using this Runner
   ##
@@ -366,7 +366,7 @@ runners:
   ##
   ## ref: https://docs.gitlab.com/ee/ci/runners/new_creation_workflow.html
   ##
-  # runUntagged: true
+  runUntagged: false
 
   ## DEPRECATED: Specify whether the runner should only run protected branches.
   ##
